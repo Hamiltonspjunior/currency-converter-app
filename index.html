@@ -10,29 +10,30 @@
 <body>
   <div class="container">
     <div class="row justify-content-center">
-      <img class="col-sm-6 col-md-5 col-lg-4 col-lg-3 col-xl-3 col-xxl-3" src="./src/img/logo.svg" alt="Logo ">
+      <img class="col-lg-3 logo" src="./src/img/logo.svg" alt="Logo ">
     </div>
-
-    <div class="row justify-content-center mb-4 mt-4">
-      <div class="col-sm-3 col-lg-3">
-        <select data-js="currency-one" class="form-select"></select>
+    <div class="box mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+          <input data-js="currency-one-times" type="number" class="form-control form-control-lg" value="1" min="1">
+        </div>
+        
+        <div class="col-md-6 mb-4">
+          <select id="currency-one" data-js="currency-one" class="form-select form-select-lg"></select>
+        </div>
       </div>
-
-      <div class="col-sm-3 col-lg-3">
-        <select data-js="currency-two" class="form-select"></select>
+  
+      <div class="row justify-content-center align-items-center">
+        
+        <div class="col-md-3">
+          <p data-js="converted-value" class="converted-value fs-2 text-center mb-4"></p>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+          <select data-js="currency-two" class="form-select form-select-lg"></select>
+        </div>
+        <p data-js="conversion-precision" class="conversion-precision fs-6 text-center mb-0"></p>
       </div>
-    </div>
-
-    <div class="row justify-content-center align-items-center mb-4 mt-4">
-      <div class="col-sm-2 col-md-2">
-        <input data-js="currency-one-times" type="number" class="form-control form-control-lg" value="1" min="1">
-      </div>
-      
-      <div class="col-sm-3 col-md-2">
-        <p data-js="converted-value" class="converted-value fs-1 text-center mb-0"></p>
-      </div>
-
-      <p data-js="conversion-precision" class="conversion-precision fs-4 text-center m-4"></p>
     </div>
   </div>
 

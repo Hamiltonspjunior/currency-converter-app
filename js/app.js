@@ -13,7 +13,7 @@ const updateResults = async () => {
     getPairExchangeData(currencyOneValue, currencyTwoValue, currencyOneTimesValue)
 
   $convertedValue.textContent = conversion_result.toFixed(2)
-  $conversionPrecision.textContent = `1 ${currencyOneValue} = ${conversion_rate} ${currencyOneValue}`
+  $conversionPrecision.textContent = `1 ${currencyOneValue} = ${conversion_rate} ${currencyTwoValue}`
 }
 
 const populateSelects = (supported_codes, defaultBaseCode, defaultTargetCode) => {
@@ -34,4 +34,4 @@ const makeFirstRequest = async (defaultBaseCode, defaultTargetCode) => {
 }
 
 makeFirstRequest('USD', 'BRL')
-document.addEventListener('change', updateResults)
+document.addEventListener('input', updateResults)

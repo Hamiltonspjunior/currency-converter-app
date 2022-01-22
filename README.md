@@ -1,6 +1,6 @@
 # Currency Converter App
 
-![A Screenshot of the Weather App](./src/#.jpeg)
+![A Screenshot of the Weather App](./src/preview.jpeg)
 
 <div style="text-align: center;">
 
@@ -26,7 +26,7 @@ This is a simple **Currency Converter** project, that uses the [ExchangeRate-API
 ---
 
 ## 💻 Usage
-No need to install anything. Just download the project, open the index.html file in your favorite browser and use! [or try it out directly through this link!](https://hjr-weather-app.netlify.app/).
+No need to install anything. Just download the project, open the index.html file in your favorite browser and use! [or try it out directly through this link!](https://hjr-currency-converter.netlify.app/).
 
 ---
 

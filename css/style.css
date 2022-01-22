@@ -1,15 +1,28 @@
 body {
-  background-color: #F9FAFC;
+  background-color: #fff;
 }
 
 .container {
   padding-top: 7.5rem;
 }
 
+.logo {
+  max-width: 340px;
+}
+
+.box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5em 2em;
+  background-color: #fff;
+  box-shadow: rgb(35 55 80 / 30%) 0px 6px 12px;
+  border-radius: 8px;
+}
+
 .converted-value {
-  color: #452B4E;
+  color: #000;
 }
 
 .conversion-precision {
-  color: #452B4E;
+  color: #000;
 }

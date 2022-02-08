@@ -6,7 +6,7 @@ const getPairExchangeURL = (baseCode, targetCode, amount) =>
   `${baseURL}/pair/${baseCode}/${targetCode}/${amount}`
 
 
-const fetchExchangeRateData = async (endpoint) => {
+const fetchExchangeRate = async (endpoint) => {
   try {
     const response = await fetch(endpoint)
     
@@ -20,7 +20,7 @@ const fetchExchangeRateData = async (endpoint) => {
   }
 }
 
-const getSupportedCodesData = () => fetchExchangeRateData(supportedCodesURL)
+const getSupportedCodes = () => fetchExchangeRate(supportedCodesURL)
 
-const getPairExchangeData = (baseCode, targetCode, amount) => 
-  fetchExchangeRateData(getPairExchangeURL(baseCode, targetCode, amount))
+const getPairExchange = ({ baseCode, targetCode, amount }) => 
+  fetchExchangeRate(getPairExchangeURL(baseCode, targetCode, amount))
